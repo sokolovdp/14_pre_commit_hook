@@ -2,7 +2,6 @@ import unittest
 
 from quadratic_equation import get_roots
 
-# run pre-commit test 1
 
 class QuadraticEquationTestCase(unittest.TestCase):
     def test_solves_real_roots(self):
