@@ -1,6 +1,7 @@
 # Quadratic Equations Solver
 
-pre-commit[.py] is script file which run python unit-test code tests.py before committing changes
+pre-commit[.py] is script file which run python unit-test code from tests.py 
+before committing changes in the quadratic_equation.py 
 
 # Usage
 
