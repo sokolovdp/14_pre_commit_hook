@@ -1,7 +1,7 @@
 # Quadratic Equations Solver
 
-pre-commit[.py] is script file which run python unit-test code from tests.py 
-before committing changes in the quadratic_equation.py 
+pre-commit is bash script file which run several python unit-tests from tests.py 
+before committing changes in the quadratic_equation.py code 
 
 # Usage
 
@@ -9,7 +9,6 @@ Copy pre-commit file into ./.git/hooks/ directory of your project
 
 # Sample output
 ```
------> running pre-commit unit tests
 .E..
 ======================================================================
 ERROR: test_returns_none_for_complex_solution (__main__.QuadraticEquationTestCase)
@@ -24,9 +23,7 @@ ValueError: math domain error
 ----------------------------------------------------------------------
 Ran 4 tests in 0.000s
 
-FAILED (errors=1)
-
------> code did not pass the unit tests, aborting commit
+FAILED (errors=1) unit tests failed, commit is not possible
 ```
 
 # Project Goals
