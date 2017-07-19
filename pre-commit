@@ -1,11 +1,12 @@
-#!/bin/sh
+#!/bin/bash
 
 python tests.py
 
-if [[ $? != 0 ]] ;
+if [ $? -eq 0 ] 
 then
-    echo 'unit tests failed, commit is not possible'
-    exit 1
+    echo "unit tests passed, commit is allowed"
+    exit 0
 else
-    echo 'unit tests passed'
+    echo "unit tests failed, commit is not possible"
+    exit 1
 fi
